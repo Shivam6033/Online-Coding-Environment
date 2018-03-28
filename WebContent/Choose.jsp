@@ -48,8 +48,8 @@
 	<% out.print(session.getAttribute("email"));%>
 	</center>
 
-<h3> <a href="run.jsp">Choose For JAVA</a></h3> <br> <br>
-<h3> <a href="runc.jsp">Choose For C</a></h3> <br> <br>
+<h3> <a href="JavaQuestions.html">Choose For JAVA</a></h3> <br> <br>
+<h3> <a href="CQuestions.html">Choose For C</a></h3> <br> <br>
 
 </body>
 </html>

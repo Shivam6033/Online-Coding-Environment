@@ -36,7 +36,7 @@
 				response.sendRedirect("login.jsp");
 		%>
 	<ul>
-		<li> <a href="welcome.jsp">Home</a></li>
+		<li> <a href="Choose.jsp">Home</a></li>
 		<li> <a href="changePassword.jsp">Change Password</a></li>
 		<li> <a href="logout.jsp">Logout</a></li>
 		
@@ -52,8 +52,20 @@
 
 
 <form action="run.com.Recievec">
+<h3>First line accept two Integer with whitespaces and print the sum as their output. <br>
+Input Format: <br>
+10 <br>
+20
+<br>
+Output Format: <br>
+
+The Sum of the Integers are 30
+
+
+</h3> <br>
+
 <h1>Enter Your Code in C Language  Below</h1> <br>
-<textarea rows="4" cols="50" name="area"> </textarea>
+<textarea rows="25" cols="100" name="area"> </textarea>
 <br>
 <br>
 <br>

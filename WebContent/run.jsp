@@ -50,7 +50,7 @@
 <center>
 <form action="run.com.Recieve">
 <h1>Enter Your Code in Java Language  Below</h1> <br>
-<textarea rows="4" cols="50" name="area"> </textarea>
+<textarea rows="25" cols="100" name="area"> </textarea>
 <br>
 <br>
 <br>

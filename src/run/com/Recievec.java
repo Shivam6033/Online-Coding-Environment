@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Recievec
@@ -26,13 +27,22 @@ public class Recievec extends HttpServlet {
 		FileOutputStream fop = null;
 		File file;
 		String content = code;
+		HttpSession sess= request.getSession();
+		System.out.println(sess.getAttribute("email"));
+	
+	sess.setAttribute("page", request.getParameter("page"));
+	sess.setAttribute("ques", request.getParameter("ques"));
+
+	sess.setAttribute("mark", request.getParameter("mark"));
+	String fname="Prog";
+	sess.setAttribute("fname", fname);
 
 		try {
 
-			file = new File("F:/eclipse-jee-oxygen-R-win32-x86_64//eclipse/Prog1.c");
+			file = new File("F:/eclipse-jee-oxygen-R-win32-x86_64//eclipse/"+fname+".c");
 			fop = new FileOutputStream(file);
 
-			// if file doesnt exists, then create it
+			
 			if (!file.exists()) {
 				file.createNewFile();
 			}
@@ -51,6 +61,7 @@ public class Recievec extends HttpServlet {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} 
+		 
 		
 	}
 

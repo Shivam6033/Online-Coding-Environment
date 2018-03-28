@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Get
@@ -29,10 +30,19 @@ public class Recieve extends HttpServlet {
 		FileOutputStream fop = null;
 		File file;
 		String content = code;
+		HttpSession sess= request.getSession();
+		System.out.println(sess.getAttribute("email"));
+	
+	sess.setAttribute("page", request.getParameter("page"));
+	sess.setAttribute("ques", request.getParameter("ques"));
+
+	sess.setAttribute("mark", request.getParameter("mark"));
+	String fname="Prog";
+	sess.setAttribute("fname", fname);
 
 		try {
 
-			file = new File("F:/eclipse-jee-oxygen-R-win32-x86_64//eclipse/Prog1.java");
+			file = new File("F:/eclipse-jee-oxygen-R-win32-x86_64//eclipse/"+fname+".java");
 			fop = new FileOutputStream(file);
 
 			// if file doesnt exists, then create it

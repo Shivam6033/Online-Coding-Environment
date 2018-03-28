@@ -32,7 +32,7 @@
 <title>HOME</title>
 
 </head>
-<body background="back.png">
+<body background="d.jpg">
 	<ul>
 		<li> <a href="index.jsp">HOME</a></li>
 		<li> <a href="login.jsp">LOGIN</a></li>

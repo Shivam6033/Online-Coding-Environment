@@ -4,6 +4,13 @@
 <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
 <meta charset="ISO-8859-1">
 <style type="text/css">
+body{
+	background-repeat:no-repeat;
+	height:100%;
+	background-position:center;
+	background-size:cover;
+}
+
 	li
 	{
 		float: left;
@@ -32,7 +39,7 @@
 <title>HOME</title>
 
 </head>
-<body background="s.jpg">
+<body background="bac.jpg">
 	<ul>
 		<li> <a href="index.jsp">HOME</a></li>
 		<li> <a href="login.jsp">LOGIN</a></li>
